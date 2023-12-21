@@ -25,8 +25,8 @@
   - This is called root element
   - This is parent tag of head and body tags.
 - `<head>`
-  - It telss which we don't want to display on webpage
-  - it contains meta information which is useful but we don't want to make it visible on webpage.
+  - In this section, we write which we don't want to display on webpage
+  - It contains meta information which is useful but we don't want to make it visible on webpage.
   - It has viewport which means responsivenss of website
   - We can define our webpage title in head.
 - `<body>`
