@@ -244,3 +244,155 @@
 ### Project - Level 3
 
 - Add your image on the home page & useful links to your GitHub/LinkedIn profiles. Also, improve your project layout.
+
+## Level Pro
+
+### List in HTML
+
+- unordered
+  - Data will be shown in bullet forms
+- ordered
+  - Roman numerals
+  - ABCD etc
+
+#### unordered list
+
+- ul
+  - li
+
+#### ordered list
+
+- ol
+  - li
+
+### Tables in HTML
+
+- table tag
+- tr
+  - table row
+- tf
+  - table data
+- th
+  - table header
+- caption in tables
+- thead
+  - to wrap table head
+- tbody
+  - to wrap table body
+- colspan - attribute in table tag
+  - Similar to merge in excel
+  - Excel main jis tarah ham 2 cells ko merge kar dete hain, usi tarah colspan attribute bhi kam karta hai.
+  - Ye attribute define kar k ham bata dete hain k kitne cells ko merge karna hai. For example:
+  - `<th colspan="2"></th>`
+
+### Form in HTML
+
+>Note: Most important topic in HTML
+
+- form tag
+  - `<form></form>`
+
+#### Action in Form
+
+- `action` attribute in form tag
+  - `<form action="script.js"></form>`
+
+##### Form element
+
+```html
+<form action="/script.js">
+  <input type="text|password|radio|checkbox|submit"></input>
+</form>
+```
+
+- input
+  - type="text" placeholde="Type something here"
+  - type="password" placeholde="Password here"
+- Label
+  - Kisi bhi input k opper ham aik label assign kar dete hain.
+  - Labels ham radio button define karte waqt bhi use karte hain.
+    - type="radio" value="class XI" name="class"
+    - type="radio" value="class XII" name="class"
+
+>Note: radio buttons define karte waqt ye make sure karna hota hai k value and us radio button ka text synced hone chahiye because backend ko text visible nahi hota bal k  'value' visible hoti hai.
+>Note: Radio button ko agar hamne samne name diya hai or label bhi assign kiya hai tu benefit ye hoga k jab ham text par click karenge tab bhi radio button select ho jayega and hame especially radio ko select karne ki zaroorat nahi rahegi.
+
+```html
+<form>
+  <label for="backend">
+  <input type="radio" value="javascript" nam="programming-language" id="backend">JavaScript</input>
+  </label>
+  <label for="data-science">
+  <input type="radio" value="python" nam="programming-language" id="data-science">Python</input>
+  </label>
+</form>
+```
+
+### Class & Id in HTML
+
+- One single element in HTML can be assigned both an 'id' and 'class'. for example
+  - `<div id="angular" class="frontend"></div>`
+  - `<div id="reactjs" class="frontend"></div>`
+  - `<div id="javascript" class="backend"></div>`
+  - `<div id="php" class="backend"></div>`
+
+### Checkbox in HTML
+
+- When we need to select multiple options instead of only one.
+- We can label checkboxes with a value. for example
+  - `<label for="101"><input type="checkbox" value="javascript" name="programming-language" id="101">Javascript</input></label>`
+  - `<label for="102"><input type="checkbox" value="python" name="programming-language" id="102">Python</input></label>`
+
+### Text Area in HTML
+
+- textarea
+  - `<textarea></textarea>`
+
+```html
+<textarea name="feeback" id="101" placeholder="Please give your input here"></textarea>
+```
+
+>Note: We can increase the size of this `textarea` by adding `rows` and `columns`. for example
+
+```html
+<textarea name="feeback" id="101" placeholder="Please give your input here" rows=5></textarea>
+```
+
+### Select in HTML
+
+- select tag
+  - `<select></select>`
+- We also need to use `option` tag inside the select to make it `drop-down` menu.
+
+```html
+<select name="programming-language">
+  <option value="Javascript">Javascript</option>
+  <option value="Python">Python</option>
+  <option value="Php">Php</option>
+  <option value="Java">Java</option>
+</select>
+```
+
+#### Submit Input Type in HTML
+
+- `<input type="submit" value="submit"></input>`
+
+### iframe tag in HTML
+
+- to show a website inside a website
+  - `<iframe src="link"></iframe>`
+
+### Video tag in HTML
+
+- `<video src="link">MyVideo</video>`
+- controls = attribute
+- controls loop = attribute
+- controls auto = attribute
+
+### Project - Level 4
+
+- Add a Contact Me page for your Portfolio
+- Make a website for students
+  - Make a signup form
+  - Add links/iframes to Youtube videos
+  - Make a table on home page to show the different topics covered in your page.
