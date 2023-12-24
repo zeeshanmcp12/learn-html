@@ -69,7 +69,7 @@
 - `<p></p>`
   - This is paragraph text.
 
-### Anchor Tag
+### Anchor Tag - Basic
 
 - To add links to pages
   - `<a href="https://www.google.com">Google</a>`
@@ -125,3 +125,122 @@
 
 - It is used to display text without ignoring spaces & next line
 - Means k agar hame paragraph (text) k between spaces ya next line required ho tu ham `pre` tag ka use karte hain.
+
+## Page Layout Techniques
+
+>Note: These are level 3 topics
+
+### Semantic Tags for Layout
+
+- wo tags jin ko dekh kar unka matlab samajh ajaye. Like
+  - Header
+  - Footer
+- Benefits of using Semantic tags
+  - Code readability
+  - SEO benefits
+
+### Non-Semantic Tags for Layout
+
+- Inko dekh kar clear nahi hota k inka kya matlab hai. for example:
+  - div
+  - span
+  - ...etc
+
+#### Semantic Tags in Detail
+
+- Header
+  - We define header tag in our body
+  - `<header></header>`
+  - `<footer></footer>`
+- Main tag
+  - header and footer k between ham `main` tag define kar k apna web page design karte hain.
+
+##### main tag
+
+- Section tag
+- Article tag
+- Aside tag
+  - For content aside main content (ads)
+  - SEO will not detect this tag
+
+##### Anchor Tag
+
+- `<a href="any_link"></a>`
+- target
+  - It's an attribute
+  - Link ko new tab main open karwana ho tu ye use karte hain.
+    - `target="_main"`
+    - `<a href="https://google.com" target="_main" alt="Google">Google</a>`
+- Image as clickable
+  - Image ko clickable banana ho tu:
+    - href tag use karte hoe jahan ham text define karte hain wahan ham `img` tag use kar sakte hain. This will make the image clickable.
+    - `<img src="https://image_link" alt="Simple Image">`
+    - `<a href="https://google.com" target="_main" alt="Google"><img src="https://image_link" alt="Simple Image"></a>`
+
+##### Revisiting img tag
+
+- Using attributes
+  - height
+    - `<img src="link" height=50>`
+  - width
+    - `<img src="link" width=50>`
+
+#### Non-Semantic Tags in Detail
+
+##### div Tag
+
+- iska khud se apna koi role nahi hota. It only holds other elements of web page.
+- div is a block element.
+- div takes full width of page.
+  - Means k ye page ki pori ki pori width ko use karta hai
+  - We can verify it through inspection.
+- By default div height is set to 0.
+
+>Note: Inline elements ko jitni space required hoti hai sirf utni hi consume karte hain.
+>Note: check list of block elements (tags) which takes full width of page.
+
+###### List of block elements (tags)
+
+- Some are
+  - footer
+  - div
+  - hr
+  - header
+  - article
+  - h1 to h6
+  - main
+  - nav
+  - noscript
+
+##### span tag
+
+- It is also use to contain other HTML elements
+- Inline elements
+  - It takes only space with is required
+
+###### List of inline elements (tags)
+
+- Some of the inline elements
+  - a
+  - abbr
+  - b
+  - big
+  - br
+  - button
+  - code
+  - em
+  - i
+  - img
+  - input
+  - map
+  - object
+  - tt
+  - var
+  - q
+  - script
+  - select
+  - small
+
+### Project - Level 3
+
+- Add your image on the home page & useful links to your GitHub/LinkedIn profiles. Also, improve your project layout.
