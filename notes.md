@@ -270,7 +270,7 @@
 - table tag
 - tr
   - table row
-- tf
+- td
   - table data
 - th
   - table header
