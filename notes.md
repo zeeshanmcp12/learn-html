@@ -297,35 +297,71 @@
 - `action` attribute in form tag
   - `<form action="script.js"></form>`
 
-##### Form element
+##### Form elements
+
+- Input
+  - type="text" placeholde="Type something here"
+  - type="password" placeholde="Password here"
+  - `<input type="text|password|radio|checkbox|submit">`
 
 ```html
 <form action="/script.js">
-  <input type="text|password|radio|checkbox|submit"></input>
+  <input type="text" placeholder="Type something here">
+  <input type="password" placeholder="Enter your password">
 </form>
 ```
 
-- input
-  - type="text" placeholde="Type something here"
-  - type="password" placeholde="Password here"
-- Label
-  - Kisi bhi input k opper ham aik label assign kar dete hain.
-  - Labels ham radio button define karte waqt bhi use karte hain.
+- Radio
+  - Ye input ki wo type hai jis main ham koi single option select kar sakte hain.
     - type="radio" value="class XI" name="class"
     - type="radio" value="class XII" name="class"
-
->Note: radio buttons define karte waqt ye make sure karna hota hai k value and us radio button ka text synced hone chahiye because backend ko text visible nahi hota bal k  'value' visible hoti hai.
->Note: Radio button ko agar hamne samne name diya hai or label bhi assign kiya hai tu benefit ye hoga k jab ham text par click karenge tab bhi radio button select ho jayega and hame especially radio ko select karne ki zaroorat nahi rahegi.
+      - "radio" type k input main ham 2 attributes define karte hain:
+      - value `value="JavaScript"`
+      - name `name="programming-language"`
 
 ```html
 <form>
-  <label for="backend">
-  <input type="radio" value="javascript" nam="programming-language" id="backend">JavaScript</input>
-  </label>
-  <label for="data-science">
-  <input type="radio" value="python" nam="programming-language" id="data-science">Python</input>
-  </label>
+    <input type="radio" value="Javascript" name="programming-language">Javascript
+        <input type="radio" value="Java" name="programming-language">Java
 </form>
+```
+
+>Note: "radio" button 'type' main hame placeholder define karne ki zaroorat nahi parti.
+
+- Radio - detail from backend perspective
+  - `<input type="radio" value="javascript" name="programming-language"/> Javascript`
+    - value `value="JavaScript"`
+      - Ye value backend k liye hai. Means k backend ko ye wali value visible hoti hai.
+    - name `name="programming-language"`
+    - "Javascript"
+      - Ye wali value user ko website par visible hoti hai.
+
+>Note: Agar hamne `value` or `input` tag close k bad jo value ati hai (placeholder value) wo same nahi ki tu error asakte hain because user ko `value` show nahi hoti and backend ko `placeholder` wali value (Javascript) show nahi hoti. For example:
+
+```html
+<input type="radio" value="Javascript" name="programming-language"> Javascript
+```
+
+>Note: Yahan `value="Javascript"` sirf backend k liye visible hoti hai
+>Note: `Javascript` ye website k user ko visible hoti hai
+>Note: Radio button ko agar hamne samne name diya hai or label bhi assign kiya hai tu benefit ye hoga k jab ham text par click karenge tab bhi radio button select ho jayega and hame especially radio ko select karne ki zaroorat nahi rahegi.
+
+- Label
+  - One usage of "Label" in HTML
+    - Kisi bhi input k opper ham aik label assign kar dete hain. Jese k student ka roll number. (still unclear)
+    - Labels is liye bhi define kiye jate hain k jo log visually impaired hote hain un logon k liye websites par voice add kardi jati hai jo 'labels' ki help se unko batate hain k websites par kya content hai...etc
+    - "Labels" input k opper par define kiya jata hai.
+  - Another usage of "Label" in HTML
+    - "Labels" ham radio button define karte waqt bhi use karte hain.
+  - Ham "Lables" `id` ki base par assign karte hain. for example:
+
+```html
+<label for="101">
+<input type="radio" value="javascript" name="programing-language" id="101"> Javascript
+</label>
+<label for="102">
+<input type="radio" value="java" name="programing-language" id="102"> Java
+</label>
 ```
 
 ### Class & Id in HTML
@@ -340,8 +376,8 @@
 
 - When we need to select multiple options instead of only one.
 - We can label checkboxes with a value. for example
-  - `<label for="101"><input type="checkbox" value="javascript" name="programming-language" id="101">Javascript</input></label>`
-  - `<label for="102"><input type="checkbox" value="python" name="programming-language" id="102">Python</input></label>`
+  - `<label for="101"><input type="checkbox" value="javascript" name="programming-language" id="101">Javascript</label>`
+  - `<label for="102"><input type="checkbox" value="python" name="programming-language" id="102">Python</label>`
 
 ### Text Area in HTML
 
@@ -375,7 +411,7 @@
 
 #### Submit Input Type in HTML
 
-- `<input type="submit" value="submit"></input>`
+- `<input type="submit" value="submit">`
 
 ### iframe tag in HTML
 
@@ -396,3 +432,9 @@
   - Make a signup form
   - Add links/iframes to Youtube videos
   - Make a table on home page to show the different topics covered in your page.
+
+## Extras
+
+- `style="margin: 10px 5px"`
+  - 10px top and bottom
+  - 5px right and left
