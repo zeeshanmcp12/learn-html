@@ -344,7 +344,6 @@
 
 >Note: Yahan `value="Javascript"` sirf backend k liye visible hoti hai
 >Note: `Javascript` ye website k user ko visible hoti hai
->Note: Radio button ko agar hamne samne name diya hai or label bhi assign kiya hai tu benefit ye hoga k jab ham text par click karenge tab bhi radio button select ho jayega and hame especially radio ko select karne ki zaroorat nahi rahegi.
 
 - Label
   - One usage of "Label" in HTML
@@ -353,7 +352,9 @@
     - "Labels" input k opper par define kiya jata hai.
   - Another usage of "Label" in HTML
     - "Labels" ham radio button define karte waqt bhi use karte hain.
-  - Ham "Lables" `id` ki base par assign karte hain. for example:
+  - Ham "Lables" `id` ki base par assign karte hain.
+
+>Note: Radio button main 'id' attribute aur 'label' ki value agar same hai tu benefit ye hoga k jab ham text par click karenge tab bhi radio button select ho jayega and hame 'especially' radio button par le ja kar click karne ki zaroorat nahi paregi. For example:
 
 ```html
 <label for="101">
@@ -376,8 +377,19 @@
 
 - When we need to select multiple options instead of only one.
 - We can label checkboxes with a value. for example
-  - `<label for="101"><input type="checkbox" value="javascript" name="programming-language" id="101">Javascript</label>`
-  - `<label for="102"><input type="checkbox" value="python" name="programming-language" id="102">Python</label>`
+  - `<label for="103"><input type="checkbox" value="javascript" name="programming-language" id="103">Javascript</label>`
+  - `<label for="104"><input type="checkbox" value="python" name="programming-language" id="104">Python</label>`
+
+>Note: checkbox main 'id' attribute aur 'label' ki value agar same hai tu benefit ye hoga k jab ham text par click karenge tab bhi checkbox select ho jayega and hame 'especially' checkbox par le ja kar click karne ki zaroorat nahi paregi. For example:
+
+```html
+<label for="103">
+  <input type="checkbox" name="javascript" id="103"> Frontend
+</label>
+<label for="104">
+  <input type="checkbox" name="java" id="104"> Backend
+</label>
+```
 
 ### Text Area in HTML
 

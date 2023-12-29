@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <main>
         <section>
-            <h1>Hello world</h1>
+            <h1>Backend</h1>
         </section>
 
         <form action="/script.js">
@@ -17,17 +19,50 @@
             <input type="password" name="password" id="username" placeholder="password"> <button>Submit</button>
 
             <br>
-<div style="margin: 10px 5px;">
-    <input type="radio" value="javascript" name="programming-language">Javascript
-    <input type="radio" value="java" name="programming-language">Java
-</div>
+            <div style="margin: 10px 5px;">
+                <label for="101">
+                <input type="radio" value="javascript" name="programming-language" id="101">Javascript
+            </label>
+            <label for="102">
+                <input type="radio" value="java" name="programming-language" id="102">Java
+            </label>
+            </div>
 
+            <div>
+                <label for="103">
+                <input type="checkbox" name="programming-language" id="103"> Frontend
+            </label>
+                <label for="104">
+                <input type="checkbox" name="programming-language" id="104"> Backend
+            </label>
+            </div>
 
+            <br>
+            <textarea name="feedback" id="105" cols="50" rows="20" placeholder="Please share your feedback"></textarea>
+            
+            <br>
+            <br>
+            <select name="options" id="110">
+                <option value="javascript">Javascript</option>
+                <option value="java">Java</option>
+                <option value="php">PHP</option>
+                <option value="python">Python</option>
+            </select>
 
+            <input type="submit" value="Submit">
+        </form>
+
+        <br>
+        <!-- <iframe src="https://acloudtechie.com" frameborder="4" width="300" height="200">
+            ACloudTechie
+        </iframe> -->
+
+        <!-- <iframe width="893" height="502" src="https://www.youtube.com/embed/HcOc7P5BMi4?list=PLfqMhTWNBTe0PY9xunOzsP5kmYIz2Hu7i" title="HTML Tutorial for Beginners | Complete HTML with Notes &amp; Code" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
     </main>
 
 
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>
