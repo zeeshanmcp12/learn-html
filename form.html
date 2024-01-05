@@ -14,32 +14,39 @@
             <h1>Backend</h1>
         </section>
 
-        <form action="/script.js">
-            <input type="text" name="username" id="username" placeholder="username">
-            <input type="password" name="password" id="username" placeholder="password"> <button>Submit</button>
+        <form>
+            <label for="username">
+                <input type="text" name="username" id="username" placeholder="username">
+            </label>
+            <label for="password">
+                <input type="password" name="password" id="password" placeholder="password">
+            </label>
 
             <br>
             <div style="margin: 10px 5px;">
-                <label for="101">
-                <input type="radio" value="javascript" name="programming-language" id="101">Javascript
-            </label>
-            <label for="102">
-                <input type="radio" value="java" name="programming-language" id="102">Java
-            </label>
+                <label for="javascript">
+                    <input type="radio" value="javascript" name="programming-language" id="javascript">Javascript
+                </label>
+                <label for="java">
+                    <input type="radio" value="java" name="programming-language" id="java">Java
+                </label>
             </div>
 
+            <input type="button" value="Submit" onclick="formSubmit()">
+
+
             <div>
-                <label for="103">
-                <input type="checkbox" name="programming-language" id="103"> Frontend
-            </label>
-                <label for="104">
-                <input type="checkbox" name="programming-language" id="104"> Backend
-            </label>
+                <label for="frontend">
+                    <input type="checkbox" name="programming-language" id="frontend"> Frontend
+                </label>
+                <label for="backend">
+                    <input type="checkbox" name="programming-language" id="backend"> Backend
+                </label>
             </div>
 
             <br>
             <textarea name="feedback" id="105" cols="50" rows="20" placeholder="Please share your feedback"></textarea>
-            
+
             <br>
             <br>
             <select name="options" id="110">
@@ -48,16 +55,9 @@
                 <option value="php">PHP</option>
                 <option value="python">Python</option>
             </select>
-
-            <input type="submit" value="Submit">
         </form>
 
         <br>
-        <!-- <iframe src="https://acloudtechie.com" frameborder="4" width="300" height="200">
-            ACloudTechie
-        </iframe> -->
-
-        <!-- <iframe width="893" height="502" src="https://www.youtube.com/embed/HcOc7P5BMi4?list=PLfqMhTWNBTe0PY9xunOzsP5kmYIz2Hu7i" title="HTML Tutorial for Beginners | Complete HTML with Notes &amp; Code" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
     </main>
 
 

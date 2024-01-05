@@ -321,12 +321,13 @@
 
 ```html
 <form>
-    <input type="radio" value="Javascript" name="programming-language">Javascript
-        <input type="radio" value="Java" name="programming-language">Java
+    <input type="radio" value="javascript" name="programming-language" id="javascript">Javascript
+        <input type="radio" value="java" name="programming-language" id="java">Java
 </form>
 ```
 
 >Note: "radio" button 'type' main hame placeholder define karne ki zaroorat nahi parti.
+>Note: "radio" button 'type' main 'name' attribute ki value same honi chahiye agar dono radio buttons same group se hain, otherwise dono radio buttons selected (checked) state main rahenge.
 
 - Radio - detail from backend perspective
   - `<input type="radio" value="javascript" name="programming-language"/> Javascript`
@@ -339,15 +340,15 @@
 >Note: Agar hamne `value` or `input` tag close k bad jo value ati hai (placeholder value) wo same nahi ki tu error asakte hain because user ko `value` show nahi hoti and backend ko `placeholder` wali value (Javascript) show nahi hoti. For example:
 
 ```html
-<input type="radio" value="Javascript" name="programming-language"> Javascript
+<input type="radio" value="javascript" name="programming-language"> Javascript
 ```
 
->Note: Yahan `value="Javascript"` sirf backend k liye visible hoti hai
+>Note: Yahan `value="javascript"` sirf backend k liye visible hoti hai
 >Note: `Javascript` ye website k user ko visible hoti hai
 
 - Label
   - One usage of "Label" in HTML
-    - Kisi bhi input k opper ham aik label assign kar dete hain. Jese k student ka roll number. (still unclear)
+    - Kisi bhi input k opper ham aik label assign kar dete hain. Is label ki wajah se ham us 'input' ko recognize karwa sakte hain based on 'id', and 'value' attribute.
     - Labels is liye bhi define kiye jate hain k jo log visually impaired hote hain un logon k liye websites par voice add kardi jati hai jo 'labels' ki help se unko batate hain k websites par kya content hai...etc
     - "Labels" input k opper par define kiya jata hai.
   - Another usage of "Label" in HTML
@@ -357,11 +358,11 @@
 >Note: Radio button main 'id' attribute aur 'label' ki value agar same hai tu benefit ye hoga k jab ham text par click karenge tab bhi radio button select ho jayega and hame 'especially' radio button par le ja kar click karne ki zaroorat nahi paregi. For example:
 
 ```html
-<label for="101">
-<input type="radio" value="javascript" name="programing-language" id="101"> Javascript
+<label for="javascript">
+<input type="radio" value="javascript" name="programing-language" id="javascript"> Javascript
 </label>
-<label for="102">
-<input type="radio" value="java" name="programing-language" id="102"> Java
+<label for="java">
+<input type="radio" value="java" name="programing-language" id="java"> Java
 </label>
 ```
 
