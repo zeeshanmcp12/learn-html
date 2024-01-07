@@ -404,7 +404,7 @@
 >Note: We can increase the size of this `textarea` by adding `rows` and `columns`. for example
 
 ```html
-<textarea name="feeback" id="101" placeholder="Please give your input here" rows=5></textarea>
+<textarea name="feedback" id="101" placeholder="Please give your input here" rows="5" cols="10"></textarea>
 ```
 
 ### Select in HTML
@@ -425,22 +425,50 @@
 #### Submit Input Type in HTML
 
 - `<input type="submit" value="submit">`
+- 'Submit' can also be used with button
+
+```html
+<button type="submit" onclick="formSubmit()">Submit</button>
+```
 
 ### iframe tag in HTML
 
+- website inside website
 - to show a website inside a website
   - `<iframe src="link"></iframe>`
+- 'height' and 'width' attributes can be used here.
 
 ### Video tag in HTML
 
 - `<video src="link">MyVideo</video>`
+
+#### Attributes in Video tag
+
 - controls = attribute
 - controls loop = attribute
 - controls auto = attribute
+- height
+- width
+
+```html
+<video controls >My Video</video>
+<video controls loop>My Video</video>
+<video controls autoplay>My Video</video>
+<!-- autoplay is not recommended -->
+<video controls height="315" width="560">My Video</video>
+```
+
+>Note: Video tag is not working in HTML at the time of writing these notes. Some workarounds found on Google.
 
 ### Project - Level 4
 
 - Add a Contact Me page for your Portfolio
+  - Input fields for
+    - name
+    - contact
+    - email
+    - message
+  - drop down for visitor i.e. Recruiter, HR Manager, and Client etc
 - Make a website for students
   - Make a signup form
   - Add links/iframes to Youtube videos

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
@@ -22,6 +23,10 @@
                 <input type="password" name="password" id="password" placeholder="password">
             </label>
 
+            <!-- <label for="search">
+                <input type="text" name="search" id="search" placeholder="Hi Hussain" style="border-radius: 10px;">
+            </label> -->
+
             <br>
             <div style="margin: 10px 5px;">
                 <label for="javascript">
@@ -32,9 +37,6 @@
                 </label>
             </div>
 
-            <input type="button" value="Submit" onclick="formSubmit()">
-
-
             <div>
                 <label for="frontend">
                     <input type="checkbox" name="programming-language" id="frontend"> Frontend
@@ -42,20 +44,41 @@
                 <label for="backend">
                     <input type="checkbox" name="programming-language" id="backend"> Backend
                 </label>
+                <label for="database">
+                    <input type="checkbox" name="query-language" id="database"> Database
+                </label>
             </div>
 
             <br>
-            <textarea name="feedback" id="105" cols="50" rows="20" placeholder="Please share your feedback"></textarea>
-
-            <br>
-            <br>
-            <select name="options" id="110">
+            <span>Select Your Favorite Programming Language </span>
+            <select name="programming-languages">
                 <option value="javascript">Javascript</option>
                 <option value="java">Java</option>
                 <option value="php">PHP</option>
                 <option value="python">Python</option>
             </select>
+
+            <br>
+            <br>
+            <textarea name="feedback" id="feedback-area" cols="50" rows="20" placeholder="Please share your feedback"></textarea>
+
+            <br>
+            <br>
+
+            <button type="submit" onclick="formSubmit()">Submit</button>
+
+            <!-- <input type="submit" value="submit" onclick="formSubmit()"> -->
+            <!-- <input type="button" value="Submit" onclick="formSubmit()"> -->
+            <br>
+            <br>
+            <br>            
         </form>
+
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/U8smiWQ8Seg?si=OIh6DCI3tDAni87m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+
+        <!-- <video controls src="D:\CEBS\D\L&D\Javascript\y2mate.com - Sorry for the Inconvenience JavaScript Crash Course Master the Basics in One Video_1080pFHR.mp4" height="350" width="560"> JavaScript Master Piece</video> -->
+        <!-- <video controls src="https://www.youtube.com/embed/U8smiWQ8Seg?si=OIh6DCI3tDAni87m" height="350" width="560"> JavaScript Master Piece</video> -->
 
         <br>
     </main>

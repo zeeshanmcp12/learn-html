@@ -10,18 +10,28 @@ let username = "abdullah"
 function formSubmit() {
   let uname = document.getElementById("username").value;
   let pwd = document.getElementById("password").value;
+  // console.log(isNaN(pwd))
+  // let programming_lang_selection = document.getElementById("programming-languages").value
+  // console.log(programming_lang_selection)
+
+
+  let numRegex = /^[0-9]+$/;
+
+  if (uname == "") {
+    alert("Username cannot be empty!")
+    
+  }
 
   if (uname === username) {
-    if (typeof pwd == "string") {
-      if (document.getElementById("javascript").checked) {
-        console.log(`Hi ${uname}, Welcome to JS community.`);
-      } else if(document.getElementById('java').checked) {
-        console.log(`Hi ${uname}, Welcome to Java community.`);
-      } else {
-        console.log('No choices selected')
-      }
+    if (pwd === "") {
+      alert("Password must be filled!");
+    } else if (document.getElementById("javascript").checked) {
+      console.log(`Hi ${uname}, Welcome to JS community.`);
+      // alert('Hi Hussain! Welcome to JS community.')
+    } else if (document.getElementById("java").checked) {
+      console.log(`Hi ${uname}, Welcome to Java community.`);
     } else {
-      console.log(`Password ${pwd} is incorrect!`);
+      console.log("No choices were selected");
     }
   } else {
     console.log(`User not found!`);
