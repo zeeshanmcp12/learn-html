@@ -1,7 +1,11 @@
-nav {
+#navbar {
     word-spacing: 5vmin;
-    text-align: center;
+    text-align: left;
     border: 2px solid black;
     background-color: antiquewhite;
     padding: 10px;
+}
+
+form {
+    line-height: 30px;
 }
