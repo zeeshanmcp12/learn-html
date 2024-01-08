@@ -1,9 +1,21 @@
 #navbar {
     word-spacing: 5vmin;
-    text-align: left;
+    text-align: center;
     border: 2px solid black;
     background-color: antiquewhite;
     padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link{
+    color: rgba(33, 33, 226, 0.925);
+}
+
+a:visited{
+    color: rgba(33, 33, 226, 0.925);
 }
 
 form {
