@@ -1,0 +1,11 @@
+#lms-title {
+    font-size: 8vmin;
+    text-align: center;
+}
+
+#emoji {
+    /* border: 2px solid black; */
+    position: relative;
+    text-align: center;
+    font-size: 50vmin;
+}
