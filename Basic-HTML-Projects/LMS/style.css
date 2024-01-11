@@ -9,3 +9,21 @@
     text-align: center;
     font-size: 50vmin;
 }
+
+#btn {
+    position: relative;
+    text-align: center;
+}
+
+#heading {
+    font-size: 4vmin;
+    text-align: left;
+}
+
+form {
+    line-height: 15px;
+}
+
+label {
+    white-space: pre-line;
+}

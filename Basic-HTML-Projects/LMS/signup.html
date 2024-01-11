@@ -9,26 +9,58 @@
 <body>
     <main>
         <section>
-            <div>
-                <p>Sign Up Form</p>
+            <div style="text-align: left;">
+                <p id="heading">Sign Up Form</p>
                 <form action="">
-                    <input type="text" name="" id="" placeholder="Your Name">
-                    <input type="password" name="" id="" placeholder="Password">
-                    <input type="text" name="" id="" placeholder="Your Email">
-                    <input type="text" name="" id="" placeholder="Your Contact Number">
-                    <input type="radio" name="" id="">Yes
-                    <input type="radio" name="" id="">No
-                    <input type="checkbox" name="" id="" value="">Programming
-                    <input type="checkbox" name="" id="">Logic Building
-                    <input type="checkbox" name="" id="">International Language
+                    <label for="">
+                        <span>Enter Your Name </span><input type="text" name="" id="" placeholder="Your Name">
+                    </label>
+                    
+                    <label for="">
+                        <span>Enter Your Password</span> <input type="password" name="" id="" placeholder="Password">
+                    </label>
+
+                    <label for="">
+                        <span>Enter Your Email </span><input type="text" name="" id="" placeholder="Your Email">
+                    </label>
+
+                    <label for="">
+                        <span>Enter Your Contact Number </span><input type="text" name="" id="" placeholder="Your Contact Number">
+                    </label>
+
+                    <br>
+                    <label for="">
+                        <span> Which is of most interest to you?</span>  <input type="checkbox" name="" id="" value="">Programming                     <input type="checkbox" name="" id="">UI/UX Design  <input type="checkbox" name="" id="">International Languages
+                    </label>
+
+                    <br>
+                    <span>Select Your Semester</span> 
                     <select name="" id="">
                         <option value="">1st Semester</option>
                         <option value="">2nd Semester</option>
                         <option value="">3rd Semester</option>
                         <option value="">4th Semester</option>
                     </select>
+
+                    <br>
+                    <br>
+                    
                     
                 </form>
+                
+                <textarea name="" id="" cols="50" rows="20" placeholder="Tell us about Yourself!"></textarea>
+                <form action="">
+                    <p> Are You Sure to Submit? </p> 
+                    <label for="yes">
+                        <input type="radio" name="confirmation" id="yes" value="yes">Yes
+                    </label>
+                    <label for="no">
+                        <input type="radio" name="confirmation" id="no" value="no">No
+                    </label>
+                </form>
+                <br>
+                <br>
+
                 <a href="./library.html"><button>Submit</button></a>
 
             </div>
