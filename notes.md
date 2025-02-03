@@ -490,3 +490,5 @@
 ```html
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempore tenetur natus ex. Quia, animi cumque! Eius vitae aut aliquam, corrupti voluptas quod alias assumenda aperiam obcaecati, ex provident libero accusamus voluptatum placeat. Ut beatae quo quam deserunt impedit repellendus repudiandae est at, autem debitis quidem ducimus officiis dolorem sequi!</p>
 ```
+
+- `<hr>` - Horizontal ruler (Horizontal rule) - this is to add a line
