@@ -479,3 +479,14 @@
 - `style="margin: 10px 5px"`
   - 10px top and bottom
   - 5px right and left
+- `h2>lorem4` - It will add `h2` element followed by 4 words. For example:
+
+```html
+<h2>Lorem ipsum dolor sit.</h2>
+```
+
+- `p>lorem50` - It will add `p` element followed by 50 words. For example:
+
+```html
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempore tenetur natus ex. Quia, animi cumque! Eius vitae aut aliquam, corrupti voluptas quod alias assumenda aperiam obcaecati, ex provident libero accusamus voluptatum placeat. Ut beatae quo quam deserunt impedit repellendus repudiandae est at, autem debitis quidem ducimus officiis dolorem sequi!</p>
+```
