@@ -148,6 +148,14 @@
 
 #### Semantic Tags in Detail
 
+- header
+- nav
+- main
+- section
+- aside
+- article
+- footer
+
 - Header
   - We define header tag in our body
   - `<header></header>`
@@ -254,6 +262,9 @@
 - ordered
   - Roman numerals
   - ABCD etc
+- Description list
+  - `<dl><dt><dd></dd></dt></dl>`
+
 
 #### unordered list
 
@@ -492,3 +503,6 @@
 ```
 
 - `<hr>` - Horizontal ruler (Horizontal rule) - this is to add a line
+- Links does not limited to only <a> tag. There are literal link as well. For example:
+  - <link rel="stylesheet" href="fileName">
+  - The browser loads this link automatically
