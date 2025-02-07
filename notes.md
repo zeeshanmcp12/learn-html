@@ -506,3 +506,27 @@
 - Links does not limited to only <a> tag. There are literal link as well. For example:
   - <link rel="stylesheet" href="fileName">
   - The browser loads this link automatically
+
+## Global Attributes
+
+- id
+- title
+- search for mdn docs
+
+## Boolean Attributes
+
+- Disabled
+- Mute
+- Hidden
+
+## Data Attributes
+
+- It allows to store custom data
+  - `data` attribute
+
+## Accessibility
+
+- aria labels
+  - these labels are used for accessbility
+- `aria-haspopup="menu"`
+- `aria-expanded="false"`
